@@ -18,8 +18,8 @@ itsdangerous>=2.1.0
 # LLM - OpenRouter/Qwen (uses OpenAI SDK)
 openai>=1.12.0
 
-# Qdrant Vector Database (handles embeddings via built-in FastEmbed)
-qdrant-client[fastembed]>=1.7.1
+# Qdrant Vector Database (lightweight client without fastembed)
+qdrant-client>=1.7.1
 
 # PostgreSQL (Neon) - Optional
 sqlalchemy>=2.0.25
@@ -29,6 +29,6 @@ psycopg2-binary>=2.9.9
 pyyaml>=6.0.1
 httpx>=0.26.0
 
-# Development
-pytest>=7.4.4
-pytest-asyncio>=0.23.3
+# Development (not needed for production)
+# pytest>=7.4.4
+# pytest-asyncio>=0.23.3
